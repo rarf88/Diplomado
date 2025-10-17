@@ -1,46 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio | Proyecto Web</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Proyecto Final – Diplomado en Diseño Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="bg-dark text-white text-center py-4">
-    <h1>Bienvenidos a Mi Galería Interactiva</h1>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
-      </ul>
-    </nav>
+  <header class="py-3 bg-white shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="assets/icons/logo.png" alt="logo" class="me-3" style="width:56px;height:56px;border-radius:8px;">
+        <div>
+          <h1 class="h5 mb-0">Proyecto Final – Diplomado en Diseño Web</h1>
+          <small class="text-muted">Curso Diplomado en Diseño de Páginas Web</small>
+          <div class="text-muted">Autor: Ramón Alexander Rincón Fuentes</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn btn-outline-primary me-2" href="index.html">Inicio</a>
+        <a class="btn btn-primary me-2" href="galeria.html">Galería</a>
+        <a class="btn btn-outline-secondary" href="sobre-nosotros.html">Sobre nosotros</a>
+      </nav>
+    </div>
   </header>
 
   <main class="container my-5">
-    <section>
-      <h2 class="text-center mb-4">Destacados</h2>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <img src="assets/img/foto1.jpg" class="img-fluid rounded shadow" alt="Foto 1" />
-          <p>Fotografía urbana</p>
+    <section class="text-center mb-4">
+      <h2>Bienvenido</h2>
+      <p class="lead">Esta es la entrega del proyecto final del Diplomado. Explora la galería con fotografías reales integradas.</p>
+    </section>
+
+    <section class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="assets/img/img2.jpg" class="card-img-top" alt="Lago Esmeralda">
+          <div class="card-body">
+            <h5 class="card-title">Lago Esmeralda</h5>
+            <p class="card-text text-muted">Una selección destacada.</p>
+            <a href="galeria.html" class="btn btn-primary">Ver galería</a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="assets/img/foto2.jpg" class="img-fluid rounded shadow" alt="Foto 2" />
-          <p>Retrato artístico</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="assets/img/img6.jpg" class="card-img-top" alt="Cascada Secreta">
+          <div class="card-body">
+            <h5 class="card-title">Cascada Secreta</h5>
+            <p class="card-text text-muted">Naturaleza en su estado puro.</p>
+            <a href="galeria.html" class="btn btn-primary">Ver galería</a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="assets/img/foto3.jpg" class="img-fluid rounded shadow" alt="Foto 3" />
-          <p>Paisaje natural</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="assets/img/img8.jpg" class="card-img-top" alt="Campo de Lavanda">
+          <div class="card-body">
+            <h5 class="card-title">Campo de Lavanda</h5>
+            <p class="card-text text-muted">Colores y texturas naturales.</p>
+            <a href="galeria.html" class="btn btn-primary">Ver galería</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>© 2025 Proyecto Final - Desarrollado por Ramón Alexander Rincón Fuentes</p>
+  <footer class="bg-light py-3 mt-5">
+    <div class="container text-center text-muted">
+      © 2025 Ramón Alexander Rincón Fuentes — Proyecto Final - Diplomado en Diseño Web
+    </div>
   </footer>
 </body>
 </html>

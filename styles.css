@@ -1,17 +1,13 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f9;
-}
-
-h1, h2 {
-  color: #0d6efd;
-}
-
-.galeria-img {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.galeria-img:hover {
-  transform: scale(1.05);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root{--primary:#0d6efd;--muted:#6c757d;--bg:#f8f9fa}
+*{box-sizing:border-box}body{font-family:'Poppins',sans-serif;background:var(--bg);color:#222;margin:0;padding:0}
+header .btn{border-radius:6px}
+.card-img-top{height:220px;object-fit:cover;transition:transform .4s ease,filter .4s ease}
+.gallery-card{cursor:pointer;overflow:hidden;border-radius:8px;transition:transform .3s ease,box-shadow .3s ease}
+.gallery-card:hover .card-img-top{transform:scale(1.08);filter:brightness(.95)}
+.gallery-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(13,110,253,.12)}
+.btn-group .btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.modal-body img{transition:opacity .4s ease}
+.fade-in{animation:fadeIn .8s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+footer{font-size:.9rem}
